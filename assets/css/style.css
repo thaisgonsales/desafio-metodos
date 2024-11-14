@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand");
+
+body {
+    background-color: #a39cd2;
+    font-family: 'Gochi Hand', cursive;
+    color: #494643;;
+}
+
+body{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;       
+    margin: 0;   
+    background-image: radial-gradient(circle, #f2f2fa59 10%, transparent 10%);
+    background-size: 20px 20px;             
+}
+
+.container {
+    background-color: #f2f2fa;
+    border-radius: 5%;
+    width: 600px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-bottom: 1rem;
+}
+
+img {
+    width: 24%
+}
+
+h3 {
+    transform: rotate(2deg);
+    padding: 0.2rem 1.2rem;
+    border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+    background-color: rgba(0, 255, 196, 0.7);
+    font-size: 1.5rem;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+input{
+    background-color: #f2f2fa;
+    border: none;
+    border-bottom: dashed 3px #ea95e0; 
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.2rem;
+    color: #494643;
+    outline: none;
+}
+
+.btn{
+    padding-left: 1em;
+}
+
+.button {
+    border: none;
+    transform: rotate(4deg);
+    transform-origin: center;
+    font-family: "Gochi Hand", cursive;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #ea95e0;
+    background-color: rgba(0, 255, 196, 0.7);
+  }
+
+.checkbox {
+    appearance: none; 
+    width: 15px;
+    height: 15px;
+    border: 2px solid #a39cd2;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox:checked {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.checkbox:checked::after {
+    content: '✓';
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tasks{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 3em;
+}
+
+.resumen{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    color: #ea95e0;
+}
